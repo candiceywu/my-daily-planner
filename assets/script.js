@@ -4,6 +4,57 @@ var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 
+//prevent 'enter' key from being used; user must click save button
+$(document).on("keydown", "form", function(event) { 
+    return event.key != "Enter";
+});
+
+
+var activityListEl = $("#activity-list");
+
+
+
+function formSubmit(event) {
+    event.preventDefault();
+    var activityItem = $('input[name="activity-input"]').val();
+    if (!activityItem) {
+        console.log("No activities have been planned for this time.");
+        return;
+    }
+
+    // add delete button to remove activity item/entry
+    activityListEl.append(
+        '<button class="btn btn-info"></button>'
+    );
+
+    //clear the form input element
+    $('input[name="activity-input"]').val('');
+}
+
+
+/* <div class="row">
+  <div class="col sm-2 col-md-2 col-lg-2">
+    <div class="hour">5PM</div>
+  </div>
+  <div class="col sm-8 col-md-8 col-lg-8">
+    <form id="activity-form">
+      <input type="text" class="activity-input w-100" id="activity-input" name="activity-input" placeholder="Enter an activity"/>
+      </form>
+  </div>
+  <div class="col sm-2 col-md-2 col-lg-2">
+    <button class="btn btn-block btn-info float-right"><i style="font-size:24px"
+        class="fa">&#xf0c7;</i></button>
+  </div>
+</div>
+
+<!--form info from activity 10-->
+
+<form id="shopping-form">
+<input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter item name" />
+<button class="btn btn-info">Add Item</button>
+</form> */
+
+
 // this is the js from activity 10
 // var shoppingFormEl = $('#shopping-form');
 // var shoppingListEl = $('#shopping-list');
