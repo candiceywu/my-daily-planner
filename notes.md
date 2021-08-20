@@ -1,6 +1,11 @@
 ## NOTES 
 
+JQUERY
+    - CSS 
+    - JAVASCRIPT
 
+MOMENT
+    - library 
 
 
 ## ASSIGNMENT
