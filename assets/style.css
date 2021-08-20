@@ -5,25 +5,59 @@
 body {
     font-size: 16px;
     line-height: 1;
+
   }
-  
+
+  .container {
+    display: table;
+    width: 100%;
+    border: solid;
+ 
+  }
+
+  .row {
+    border: solid;
+    margin: 2px;
+    min-height: 100px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .page-content {
+    display: table-cell;
+  }
+
+
+
+
+
+
+/*   
   textarea {
     background: transparent;
     border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
-    padding: 10px;
-  }
+    padding: 5px;
+  } */
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: rgb(52, 121, 71);
+    color: rgb(255, 225, 0);
+    font-weight: bold;
     border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
+    border-bottom: 10px solid rgb(20, 70, 33);
+  } 
+
+.btn {
+  background-color: rgb(52, 121, 71);
+}
+
+
+
+/*   
   .description {
     white-space: pre-wrap;
   }
@@ -71,5 +105,6 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
-  }
+  } */
   
+
