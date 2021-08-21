@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -30,22 +28,26 @@
 
     <div class="page-content">
 
-      <!-- 8AM TIMESLOT -->
+
+      <!-- 8AM TIMESLOT button does not work-->
       <div class="row">
         <div class="col sm-2 col-md-2 col-lg-2">
           <div class="hour">8AM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-1" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info"><i style="font-size:24px, float=right, btn-block;" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-1"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+
+        <ul id="activity-list-1"></ul>
       </div>
+
+
+
 
       <!-- 9AM TIMESLOT -->
       <div class="row">
@@ -53,14 +55,13 @@
           <div class="hour">9AM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-2" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-2"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+          <ul id="activity-list-2"></ul>
         </div>
       </div>
 
@@ -70,15 +71,14 @@
           <div class="hour">10AM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-3" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-3"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-3"></ul>
       </div>
 
 
@@ -89,15 +89,14 @@
           <div class="hour">11AM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-4" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-4"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-4"></ul>
       </div>
 
       <!-- 12PM TIMESLOT -->
@@ -106,15 +105,14 @@
           <div class="hour">12PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-5" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-5"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-5"></ul>
       </div>
 
 
@@ -125,15 +123,14 @@
           <div class="hour">1PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-6" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-6"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-6"></ul>
       </div>
 
 
@@ -145,15 +142,14 @@
           <div class="hour">2PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-7" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-7"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-7"></ul>
       </div>
 
 
@@ -165,15 +161,14 @@
           <div class="hour">3PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-8" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-8"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-8"></ul>
       </div>
 
 
@@ -184,15 +179,14 @@
           <div class="hour">4PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-9" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-9"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-9"></ul>
       </div>
 
 
@@ -204,15 +198,14 @@
           <div class="hour">5PM</div>
         </div>
         <div class="col sm-8 col-md-8 col-lg-8">
-          <form id="activity-form">
-            <input type="text" class="activity-input w-100" id="activity-input" name="activity-input"
-              placeholder="Enter an activity" />
-          </form>
-          <ul id="activity-list"></ul>
+          <input type="text" class="form-input w-100" id="activity-input-10" name="activity-input"
+            placeholder="Enter an activity" />
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-block btn-info float-right"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
+          <button class="btn btn-info" id="btn-10"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
         </div>
+        <ul id="activity-list-10"></ul>
       </div>
 
 
@@ -233,6 +226,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
   <script src="./assets/script.js"></script>
+  
 </body>
 
 </html>
