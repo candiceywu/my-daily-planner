@@ -30,182 +30,175 @@
 
 
       <!-- 8AM TIMESLOT button does not work-->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
+      <div class="row time-block" id="8">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
           <div class="hour">8AM</div>
         </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-1" name="activity-input"
-            placeholder="Enter an activity" />
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="text8am" class="form-input w-100" name="8" placeholder="Enter an activity"></textarea>
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-1"><i style="font-size:24px, float=right, btn-block;"
+          <button class="btn btn-info" id="btn-8"><i style="font-size:24px, float=right, btn-block;"
               class="fa">&#xf0c7;</i></button>
         </div>
 
-        <ul id="activity-list-1"></ul>
+        <ul id="activity-list-8"></ul>
       </div>
 
 
 
 
       <!-- 9AM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
+      <div class="row time-block" id="9">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
           <div class="hour">9AM</div>
         </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-2" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-2"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-          <ul id="activity-list-2"></ul>
-        </div>
-      </div>
-
-      <!-- 10AM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">10AM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-3" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-3"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-3"></ul>
-      </div>
-
-
-
-      <!-- 11AM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">11AM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-4" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-4"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-4"></ul>
-      </div>
-
-      <!-- 12PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">12PM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-5" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-5"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-5"></ul>
-      </div>
-
-
-
-      <!-- 1PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">1PM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-6" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-6"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-6"></ul>
-      </div>
-
-
-
-
-      <!-- 2PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">2PM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-7" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-7"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-7"></ul>
-      </div>
-
-
-
-
-      <!-- 3PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">3PM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-8" name="activity-input"
-            placeholder="Enter an activity" />
-        </div>
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <button class="btn btn-info" id="btn-8"><i style="font-size:24px, float=right, btn-block;"
-              class="fa">&#xf0c7;</i></button>
-        </div>
-        <ul id="activity-list-8"></ul>
-      </div>
-
-
-
-      <!-- 4PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">4PM</div>
-        </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-9" name="activity-input"
-            placeholder="Enter an activity" />
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="text9am" class="form-input w-100" name="9" placeholder="Enter an activity"></textarea>
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
           <button class="btn btn-info" id="btn-9"><i style="font-size:24px, float=right, btn-block;"
               class="fa">&#xf0c7;</i></button>
+          <ul id="activity-list-9"></ul>
         </div>
-        <ul id="activity-list-9"></ul>
       </div>
 
-
-
-
-      <!-- 5PM TIMESLOT -->
-      <div class="row">
-        <div class="col sm-2 col-md-2 col-lg-2">
-          <div class="hour">5PM</div>
+      <!-- 10AM TIMESLOT -->
+      <div class="row time-block" id="10">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
+          <div class="hour">10AM</div>
         </div>
-        <div class="col sm-8 col-md-8 col-lg-8">
-          <input type="text" class="form-input w-100" id="activity-input-10" name="activity-input"
-            placeholder="Enter an activity" />
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="text10am" class="form-input w-100" name="10" placeholder="Enter an activity"></textarea>
         </div>
         <div class="col sm-2 col-md-2 col-lg-2">
           <button class="btn btn-info" id="btn-10"><i style="font-size:24px, float=right, btn-block;"
               class="fa">&#xf0c7;</i></button>
         </div>
         <ul id="activity-list-10"></ul>
+      </div>
+
+
+
+      <!-- 11AM TIMESLOT -->
+      <div class="row time-block" id="11">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
+          <div class="hour">11AM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="tex11am" class="form-input w-100" name="11" placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-11"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-11"></ul>
+      </div>
+
+      <!-- 12PM TIMESLOT -->
+      <div class="row time-block" id="12">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
+          <div class="hour">12PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="text12pm" class="form-input w-100" name="12" placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-12"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-12"></ul>
+      </div>
+
+
+
+      <!-- 1PM TIMESLOT -->
+      <div class="row time-block" id="13">
+        <div class="col sm-2 col-md-2 col-lg-2 input-group">
+          <div class="hour">1PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form-group">
+          <textarea class="schedule" id="text1pm" class="form-input w-100" name="13"
+            placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-13"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-13"></ul>
+      </div>
+
+
+
+
+      <!-- 2PM TIMESLOT -->
+      <div class="row time-block" id="14">
+        <div class="col sm-2 col-md-2 col-lg-2 input group">
+          <div class="hour">2PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form group">
+          <textarea class="schedule" id="text2pm" class="form-input w-100" name="14"
+            placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-14"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-14"></ul>
+      </div>
+
+
+
+
+      <!-- 3PM TIMESLOT -->
+      <div class="row time-block" id="15">
+        <div class="col sm-2 col-md-2 col-lg-2 input group">
+          <div class="hour">3PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form group">
+          <textarea class="schedule" id="text3pm" class="form-input w-100" name="15"
+            placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-15"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-15"></ul>
+      </div>
+
+
+
+      <!-- 4PM TIMESLOT -->
+      <div class="row time-block" id="16">
+        <div class="col sm-2 col-md-2 col-lg-2 input group">
+          <div class="hour">4PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form group">
+          <textarea class="schedule" id="text4pm" class="form-input w-100" name="16" placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-16"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-16"></ul>
+      </div>
+
+
+
+
+      <!-- 5PM TIMESLOT -->
+      <div class="row time-block" id="17">
+        <div class="col sm-2 col-md-2 col-lg-2 input group">
+          <div class="hour">5PM</div>
+        </div>
+        <div class="col sm-8 col-md-8 col-lg-8 form group">
+          <textarea class="schedule" id="text5pm" class="form-input w-100" name="17" placeholder="Enter an activity"></textarea>
+        </div>
+        <div class="col sm-2 col-md-2 col-lg-2">
+          <button class="btn btn-info" id="btn-17"><i style="font-size:24px, float=right, btn-block;"
+              class="fa">&#xf0c7;</i></button>
+        </div>
+        <ul id="activity-list-17"></ul>
       </div>
 
 
