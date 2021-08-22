@@ -35,6 +35,7 @@ var text5PM = $("#text5pm");
 
 var saveBtn = $(".saveBtn");
 
+
 //button clicks, local storage
 saveBtn.on("click", function(){
   localStorage.setItem("8AM", (text8AM.val()));
@@ -49,6 +50,7 @@ saveBtn.on("click", function(){
   localStorage.setItem("5PM", (text5PM.val()));
 });
 
+
 //get content stored and send to screen
 $("#text8am").append(localStorage.getItem("8AM"));
 $("#text9am").append(localStorage.getItem("9AM"));
@@ -61,8 +63,8 @@ $("#text3pm").append(localStorage.getItem("3PM"));
 $("#text4pm").append(localStorage.getItem("4PM"));
 $("#text5pm").append(localStorage.getItem("5PM"));
 
-// color-audit of current time and activities
 
+// color-audit of current time and activities
 function pastPresentFuture() {
   $(".time-block").each(function () {
       var calendarHour = parseInt($(this).attr("id"));
