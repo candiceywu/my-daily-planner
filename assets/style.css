@@ -5,14 +5,12 @@
 body {
     font-size: 16px;
     line-height: 1;
-    background-color: #dad7cd;
 
   }
 
   .container {
     display: table;
     width: 100%;
-    /* border: solid; */
  
   }
 
@@ -31,7 +29,7 @@ body {
   .jumbotron {
     text-align: center;
     background-color:#3a5a40;
-    color: #dad7cd;
+    color: white;
     font-weight: bold;
     border-radius: 0;
     border-bottom: 10px solid #588157;
@@ -41,7 +39,7 @@ body {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #588157;
   color: white;
 }
 

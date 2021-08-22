@@ -7,13 +7,6 @@ $(document).on("keydown", "form", function (event) {
   return event.key != "Enter";
 });
 
-// //buttons
-// var button = $(".btn btn-info");
-// var btn8 = $("#btn-8");
-// var btn9 = $("#btn-9");
-// var activityArray1 = [];
-// var activityArray2 = [];
-
 //variables for each time block
 var hour8 = $("#8");
 var hour9 = $("#9");
@@ -40,12 +33,10 @@ var text3PM = $("#text3pm");
 var text4PM = $("#text4pm");
 var text5PM = $("#text5pm");
 
-var button = $(".btn btn-info");
-
-
+var saveBtn = $(".saveBtn");
 
 //button clicks, local storage
-$("button").on("click", function(){
+saveBtn.on("click", function(){
   localStorage.setItem("8AM", (text8AM.val()));
   localStorage.setItem("9AM", (text9AM.val()));
   localStorage.setItem("10AM", (text10AM.val()));
@@ -70,43 +61,22 @@ $("#text3pm").append(localStorage.getItem("3PM"));
 $("#text4pm").append(localStorage.getItem("4PM"));
 $("#text5pm").append(localStorage.getItem("5PM"));
 
+// color-audit of current time and activities
 
+function pastPresentFuture() {
+  $(".time-block").each(function () {
+      var calendarHour = parseInt($(this).attr("id"));
 
+      if (calendarHour > currentHour) {
+          $(this).addClass("future")
+      }
+      else if (calendarHour == currentHour) {
+          $(this).addClass("present");
+      }
+      else {
+          $(this).addClass("past");
+      }
+  })
+}
 
-
-
-
-
-// //8am timeslot
-// btn8.on("click", function () {
-//   console.log("button 8 clicked");
-//   var inputText = $("#text8am").val();
-//   activityArray1.push(inputText);
-//   console.log(activityArray1);
-
-
-
-//   localStorage.setItem("8AM", JSON.stringify(activityArray1));
-
-// });
-
-// //9am timeslot
-// btn9.on("click", function () {
-//   console.log("button 9 clicked");
-//   var inputText = $("#text9am").val();
-//   activityArray2.push(inputText);
-//   console.log(activityArray2);
-
-//   localStorage.setItem("9AM", JSON.stringify(activityArray2));
-// });
-
-
-//use JSON to parse to turn back into array to display
-
-
-//using moment.js to determine background colors based on time
-// function - if current time is present, then select corresponding row to be a certain color
-// if current time is > past times, turn those into grey
-// if current time is < future times, then they will be a certain color
-
-//variable for current hour 
+pastPresentFuture();
