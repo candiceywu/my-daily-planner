@@ -12,7 +12,7 @@ body {
   .container {
     display: table;
     width: 100%;
-    border: solid;
+    /* border: solid; */
  
   }
 
@@ -37,79 +37,69 @@ body {
     border-bottom: 10px solid #588157;
   } 
 
-.btn {
-  background-color: #3a5a40;
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
 }
 
 .hour {
-  font-size: 20px;
-  font-weight: bold;
-  color: #344e41;
+/* background-color: #ffffff; */
+color: #000000;
+/* border-top: 1px dashed #000000; */
 }
 
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
 
+.present {
+  background-color: #ff6961;
+  color: white;
+}
 
-/*   
-  textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 5px;
-  } */
+.future {
+  background-color: #77dd77;
+  color: white;
+}
 
-
-
-
-/*   
-  .description {
+  
+.description {
     white-space: pre-wrap;
-  }
+}
+
   
-  .time-block {
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-  } */
-  
+
+
+
+
 
