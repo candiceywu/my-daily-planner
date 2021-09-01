@@ -8,6 +8,9 @@ I enjoyed this project but am having a difficult time transitioning from vanilla
 ## Installation
 For installation and deployment, please [click here](https://candiceywu.github.io/my-daily-planner/). The application should launch with all windows prompts active. 
 
+## Technologies and languages used
+HTML, CSS, Bootstrap, JavaScript, jQuery and Moment.js were utilized for this application.
+
 ## Usage
 The user can store their work day's activities in this daily planner. The user can enter an activity and click the 'save' button so that the activity will be saved into local storage. If the user refreshes or closes the tab, and re-loads the page, the activities will still show up so the user doesn't lose their notes of planned activities for that day. The following image shows the web application's appearance:
 
