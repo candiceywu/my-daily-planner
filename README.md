@@ -12,6 +12,16 @@ For installation and deployment, please [click here](https://candiceywu.github.i
 HTML, CSS, Bootstrap, JavaScript, jQuery and Moment.js were utilized for this application.
 
 ## Usage
-The user can store their work day's activities in this daily planner. The user can enter an activity and click the 'save' button so that the activity will be saved into local storage. If the user refreshes or closes the tab, and re-loads the page, the activities will still show up so the user doesn't lose their notes of planned activities for that day. The following image shows the web application's appearance:
+The user can store their work day's activities in this daily planner. The user can enter an activity and click the 'save' button so that the activity will be saved into local storage. If the user refreshes or closes the tab, and re-loads the page, the activities will still show up so the user doesn't lose their notes of planned activities for that day. The following images show the web application's appearance, and if the user refreshes the page it will still show previous entries (second image):
 
-![Candice Wu's Daily Planner application includes a workday range of 8AM to 5PM with a text area that users can enter their activities in. The save button next to the text box will save the user's entries and display again if the page is closed/refreshed and opened again.](assets/screencapture.png)
+![Candice Wu's Daily Planner application includes a workday range of 8AM to 5PM with a text area that users can enter their activities in.](assets/screencapture.png)
+
+![The save button next to the text box will save the user's entries and display again if the page is closed/refreshed and opened again.](assets/screencapture2.png)
+
+## License & Copyright
+
+(c) Candice Wu 
+
+contact: candice.ying.wu@gmail.com 
+
+Licensed under the MIT License.
