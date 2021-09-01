@@ -2,10 +2,13 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+html, body {
+  overscroll-behavior: none;
+}
+
 body {
     font-size: 16px;
     line-height: 1;
-
   }
 
   .container {
@@ -39,7 +42,7 @@ body {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #588157;
+  background-color: #344e41;
   color: white;
 }
 
@@ -76,7 +79,7 @@ color: #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #dad7cd;
   color: white;
 }
 
@@ -86,7 +89,7 @@ color: #000000;
 }
 
 .future {
-  background-color: #588157;
+  background-color: #a3b18a;
   color: white;
 }
 
