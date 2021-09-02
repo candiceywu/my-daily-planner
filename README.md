@@ -24,4 +24,4 @@ The user can store their work day's activities in this daily planner. The user c
 
 contact: candice.ying.wu@gmail.com 
 
-Licensed under the MIT License.
+Licensed under the MIT License [click here](license).
