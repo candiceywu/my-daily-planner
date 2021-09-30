@@ -1,5 +1,7 @@
 # my-daily-planner
 
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ## Description
 This application, My Daily Planner, was created with the purpose of helping the user keep track of their schedule within one day and display time in the past as greyed out, the current hour as red, and future hours left in the work day as green. The daily planner also shows today's day and date, so the user knows what day they're logging activities for.
 
